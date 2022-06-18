@@ -1,0 +1,295 @@
+{
+  "uuid": "6648dac1-4cf3-4ed0-a238-64211433a027",
+  "lastMigration": 19,
+  "name": "DCX",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3300,
+  "routes": [
+    {
+      "uuid": "34581128-a55c-46f4-bb94-e04108e13439",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "v1/health",
+      "responses": [
+        {
+          "uuid": "c74b81b8-4ac8-4cac-bb5e-8b6ecfaec327",
+          "body": "{\n  \"status\": \"UP\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "2d5b76e4-e923-4fa5-b76a-c276f15f4447",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "v1/chart/:chartType",
+      "responses": [
+        {
+          "uuid": "15f4a88b-b0b1-48f6-b9e5-90711cac8003",
+          "body": "{\n  \"chartList\":[\n    \n    ]\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "e592ee27-e7d3-4e10-bd79-e5762f0d56e8",
+          "body": "{\n  \"chartList\":[\n    {\n      \"id\": 1,\n      \"rank\": 1,\n      \"title\": \"Celebrity\",\n      \"singer\": \"아이유\" ,\n      \"imageUrl\": \"celebrity.jpeg\"\n    },\n    {\n      \"id\": 2,\n      \"rank\": 2,\n      \"title\": \"Rollin'\",\n      \"singer\": \"브레이브걸스\",\n      \"imageUrl\": \"rollin.jpeg\"\n    },\n    {\n      \"id\": 3,\n      \"rank\": 3,\n      \"title\": \"LOVE DAY (2021) (바른연애 길잡이 X 양요섭, 정은지)\",\n      \"singer\": \"양요섭, 정은지\",\n      \"imageUrl\": \"loveday.jpeg\"\n    },\n    {\n      \"id\": 4,\n      \"rank\": 4,\n      \"title\": \"밤하늘의 별을(2020)\",\n      \"singer\": \"경서\",\n      \"imageUrl\": \"nightstar.jpeg\"\n    },\n    {\n      \"id\": 5,\n      \"rank\": 5,\n      \"title\": \"Dynamite\",\n      \"singer\": \"방탄소년단\",\n      \"imageUrl\": \"dynamite.jpeg\"\n    },\n    {\n      \"id\": 6,\n      \"rank\": 6,\n      \"title\": \"VVS (Feat. JUSTHIS) (Prod. GroovyRoom)\",\n      \"singer\": \"미란이 (Mirani), 먼치맨(MUNCHMAN), Khundi Panda\" ,\n      \"imageUrl\": \"vvs.jpeg\"\n    },\n    {\n      \"id\": 7,\n      \"rank\": 7,\n      \"title\": \"밝게 빛나는 별이 되어 비춰줄게\",\n      \"singer\": \"송이한\",\n      \"imageUrl\": \"shiningstar.jpeg\"\n    },\n    {\n      \"id\": 8,\n      \"rank\": 8,\n      \"title\": \"LOVE DAY (2021) (바른연애 길잡이 X 양요섭, 정은지)\",\n      \"singer\": \"양요섭, 정은지\",\n      \"imageUrl\": \"loveday.jpeg\"\n    },\n    {\n      \"id\": 9,\n      \"rank\": 9,\n      \"title\": \"잠이 오질 않네요\",\n      \"singer\": \"장범준\",\n      \"imageUrl\": \"cantsleep.jpeg\"\n    },\n    {\n      \"id\": 10,\n      \"rank\": 10,\n      \"title\": \"내 손을 잡아\",\n      \"singer\": \"아이유\",\n      \"imageUrl\": \"myhands.jpeg\"\n    },\n    {\n      \"id\": 11,\n      \"rank\": 11,\n      \"title\": \"Lovesick Girls\",\n      \"singer\": \"BLACKPINK\" ,\n      \"imageUrl\": \"lovesick.jpeg\"\n    },\n    {\n      \"id\": 12,\n      \"rank\": 12,\n      \"title\": \"취기를 빌려 (취향저격 그녀 X 산들)\",\n      \"singer\": \"산들\",\n      \"imageUrl\": \"drunken.jpeg\"\n    },\n    {\n      \"id\": 13,\n      \"rank\": 13,\n      \"title\": \"이 밤을 빌려 말해요 (바른연애 길잡이 X 10CM)\",\n      \"singer\": \"10CM\",\n      \"imageUrl\": \"tonight.jpeg\"\n    },\n    {\n      \"id\": 14,\n      \"rank\": 14,\n      \"title\": \"나랑 같이 걸을래 (바른연애 길잡이 X 적재)\",\n      \"singer\": \"적재\",\n      \"imageUrl\": \"walk.jpeg\"\n    },\n    {\n      \"id\": 15,\n      \"rank\": 15,\n      \"title\": \"에잇(Prod.&Feat. SUGA of BTS)\",\n      \"singer\": \"아이유\",\n      \"imageUrl\": \"eight.jpeg\"\n    }\n    ]\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "domestic",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "chartType",
+              "value": "domestic",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "24ac509d-54b0-4aeb-aad8-46f331ca61aa",
+          "body": "{\n  \"chartList\":[\n    {\n      \"id\": 16,\n      \"rank\": 1,\n      \"title\": \"honey moon\",\n      \"singer\": \"corner club\" ,\n      \"imageUrl\": \"honeymoon.jpeg\"\n    },\n    {\n      \"id\": 17,\n      \"rank\": 2,\n      \"title\": \"Ripe\",\n      \"singer\": \"FLAVIA\",\n      \"imageUrl\": \"ripe.jpeg\"\n    },\n    {\n      \"id\": 18,\n      \"rank\": 3,\n      \"title\": \"Pogathe Kanmaniye\",\n      \"singer\": \"Jigunaamann, Keshav Vinod\",\n      \"imageUrl\": \"pogathe.jpeg\"\n    },\n    {\n      \"id\": 19,\n      \"rank\": 4,\n      \"title\": \"Nihta Genari\",\n      \"singer\": \"Vasilis Karras\",\n      \"imageUrl\": \"nihta.jpeg\"\n    },\n    {\n      \"id\": 20,\n      \"rank\": 5,\n      \"title\": \"You Don't Own Me\",\n      \"singer\": \"Matt & Kim\",\n      \"imageUrl\": \"me.jpeg\"\n    },\n    {\n      \"id\": 21,\n      \"rank\": 6,\n      \"title\": \"All Cried Out (Live On The Ed Sullivan Show)\",\n      \"singer\": \"Dusty Springfield\" ,\n      \"imageUrl\": \"all.jpeg\"\n    },\n    {\n      \"id\": 22,\n      \"rank\": 7,\n      \"title\": \"Numai tu\",\n      \"singer\": \"Red Parlament, Elena Ionescu\",\n      \"imageUrl\": \"numai.jpeg\"\n    },\n    {\n      \"id\": 23,\n      \"rank\": 8,\n      \"title\": \"Envoi (Live Uit Liefde Voor Muziek)\",\n      \"singer\": \"Tourist LeMC\",\n      \"imageUrl\": \"envoi.jpeg\"\n    },\n    {\n      \"id\": 24,\n      \"rank\": 9,\n      \"title\": \"Monstras\",\n      \"singer\": \"Meide\",\n      \"imageUrl\": \"monstras.jpeg\"\n    },\n    {\n      \"id\": 25,\n      \"rank\": 10,\n      \"title\": \"Truputi\",\n      \"singer\": \"Liepa\",\n      \"imageUrl\": \"truputi.jpeg\"\n    },\n    {\n      \"id\": 26,\n      \"rank\": 11,\n      \"title\": \"Skrendu su veju\",\n      \"singer\": \"Vaida\" ,\n      \"imageUrl\": \"skrendu.jpeg\"\n    },\n    {\n      \"id\": 27,\n      \"rank\": 12,\n      \"title\": \"Nieks nepasikeis\",\n      \"singer\": \"Arturas\",\n      \"imageUrl\": \"nieks.jpeg\"\n    },\n    {\n      \"id\": 28,\n      \"rank\": 13,\n      \"title\": \"Cherry Pit\",\n      \"singer\": \"Luna Li\",\n      \"imageUrl\": \"cherry.jpeg\"\n    },\n    {\n      \"id\": 29,\n      \"rank\": 14,\n      \"title\": \"Cowboy\",\n      \"singer\": \"Allison Ponthier\",\n      \"imageUrl\": \"cowboy.jpeg\"\n    },\n    {\n      \"id\": 30,\n      \"rank\": 15,\n      \"title\": \"She Wants Control\",\n      \"singer\": \"LuQa\",\n      \"imageUrl\": \"control.jpeg\"\n    }\n    ]\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "overseas",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "chartType",
+              "value": "overseas",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "96fa9bf5-6051-4652-a636-2ce9f3973135",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "v1/chart/detail/:id",
+      "responses": [
+        {
+          "uuid": "745cf9ac-7c4e-4f9d-a3c2-2d10dddb720e",
+          "body": "{\n  \"chart\": {}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "c32448ab-7396-4e19-b93b-c5c04bcb96ca",
+          "body": "{\n  \"chart\": {\n    \"id\": 1,\n    \"title\": \"Celebrity\",\n    \"singer\": \"아이유\",\n    \"melodizer\": \"Ryan S.Jhun, Jeppe London Bilsby, Lauritz Emil Christiansen, 아이유(IU), Chloe Latimer, Celine Svanback\",\n    \"lyricist\": \"아이유\",\n    \"genre\": \"댄스\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "1",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "1",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "aa9a46bf-df05-42d8-9af4-3deb32cc44d1",
+          "body": "{\n  \"chart\": {\n    \"id\": 2,\n    \"title\": \"Rollin'\",\n    \"singer\": \"브레이브걸스\",\n    \"melodizer\": \"용감한 형제, 투챔프, 차쿤\",\n    \"lyricist\": \"용감한 형제, 차쿤\",\n    \"genre\": \"댄스\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "2",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "2",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "28dbe36f-0d02-4fc7-bec3-43c53289248d",
+          "body": "{\n  \"chart\": {\n    \"id\": 3,\n    \"title\": \"LOVE DAY\",\n    \"singer\": \"정은지,양요섭\",\n    \"melodizer\": \"김건우\",\n    \"lyricist\": \"김이나\",\n    \"genre\": \"발라드\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "3",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "3",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        },
+        {
+          "uuid": "6ee29daf-b8a5-467a-a4c9-2cba25459e5b",
+          "body": "{\n  \"chart\": {\n    \"id\": 4,\n    \"title\": \"밤하늘의 별을(2020)\",\n    \"singer\": \"경서\",\n    \"melodizer\": \"강봄\",\n    \"lyricist\": \"강봄\",\n    \"genre\": \"발라드\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "4",
+          "headers": [
+            {
+              "key": "",
+              "value": ""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "4",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyRemovePrefix": false,
+  "hostname": "0.0.0.0",
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  }
+}
