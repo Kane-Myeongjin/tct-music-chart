@@ -4,6 +4,7 @@ import MainListTitle from "../components/MainListTitle";
 import ListComponentWithoutScroll from "../components/ListComponentWithoutScroll";
 import ListComponent from "../components/ListComponent";
 import { numberFormat } from "../utils/commonUtils";
+import ListCompontStyleTwoColumn from "../components/ListComponentStyleTwoColumn";
 
 const MainListPage = () => {
     return (
@@ -11,13 +12,16 @@ const MainListPage = () => {
             {/* <div>{numberFormat(1234567890)}</div> */}
             <MainListTitle />
             {/* 탭 있는 화면 */}
-            <TabsComponent />
+            {/* <TabsComponent /> */}
 
             {/* 탭 없고 스크롤 없는 화면 */}
             {/* <ListComponentWithoutScroll listType="domestic" /> */}
 
             {/* 탭 없고 무한스크롤 있는 화면 */}
             {/* <ListComponent listType="domestic" /> */}
+
+            {/* 무한스크롤 + 두줄 style */}
+            <ListCompontStyleTwoColumn listType="domestic" />
         </div>
     );
 };
